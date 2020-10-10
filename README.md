@@ -49,7 +49,7 @@ Now the Show sheet is all set. Rather than redoing all of the above steps to cre
 5. To the left of the content container, drag another `Vertical` object onto the dashboard. This will become the sidebar (rename this object "Sidebar). Fix the width of this object to the desired width of your sidebar. I recommend giving this object a shaded background and/or a border so it stands out from the content.
 6. To the left of the sidebar, drag the `Blank` sheet onto the dashboard and make it fill the entire view (with the sheet selected, click the down arrow and choose "Fit" and then "Entire View").
 
-(hierarchy screenshot here)
+![The initial dashboard hierarchy](img/dashboard-hierarchy.png)
 
 The next steps involve placement of the show/hide "buttons". Laying out dashboards properly is a very fussy process, but see the screenshot below for what the hierarchy should look like after these steps are completed.
 
@@ -59,7 +59,7 @@ The next steps involve placement of the show/hide "buttons". Laying out dashboar
 
 At this point the dashboard should look like this:
 
-(progress screenshot here)
+![The final dashboard hierarchy](img/dashboard-progress.png)
 
 ## Step 4: The show/hide action
 
