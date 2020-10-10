@@ -68,6 +68,8 @@ At this point the dashboard should look like this:
 3. Give the action a name such as "show-hide". In the source sheets section, choose the dashboard (here "Dashboard 1") from the dropdown, and make sure only "Hide" and "Show" are checked. Run the action on select. In the target sheets section, again choose the dashboard from the dropdown, and check only "Blank". Select "leave the filter" for the behavior when clearing the selection. Finally, click OK.
 4. Back on the dashboard, try clicking on the `X` in the sidebar. The blank sheet on the left should disappear. Click the `+` and it should come back.
 
+![The show-hide action](img/dashboard-action.png)
+
 If the buttons are working, select the topmost horizontal container and set the x position to negative the width of your sidebar. This will slide everything over so that the blank sheet is invisible. Now click the `X` again and the sidebar will disappear.
 
 ## Step 5: Create your dashboard
