@@ -27,5 +27,20 @@ To get this to work, there are three components that must be set up in a very pa
 5. Next we need to hide everything on the sheet except for the `+` mark itself. Right click on both the top and bottom axes and deselect "Show Header". In the Marks pane under "All", click on "Tooltip" and deselect "Show tooltips". Right click on the `+` itself and choose "Format...", then go into the Format Borders tab and set everything to "None". Do the same in the Format Lines tab.
 6. Adjust the size and color of the mark to your liking.
 7. You may notice that hovering over the `+` causes a thick border to appear around the shape. To prevent this from happening, the trick is to set the shape for *one* of the two parameters on the sheet to a completely transparent image. There is a 100x100 transparent image included in this repository. To use it, find the folder on your machine called "My Tableau Repository" (to find its location, open the "File" menu in Tableau and select "Repository Location..."). Open it, then open the "Shapes" folder, create a subfolder named "Custom Images" or something similar, then copy the image into that new folder. From Tableau, in the Marks pane, go to "0.0 (2)" and click Shape, then "More Shapes...". You should see the name of the folder you created in the dropdown list (if not, click "Reload Shapes" or restart Tableau and check again). Your image should appear in the box. Since it's transparent, it may not look like it's there, but if you move your mouse into the box you should be able to find it. Choose the transparent image as the shape, and the `+` mark will no longer have the border when hovering over it.
+8. Rename this sheet "Show".
+
+Now the Show sheet is all set. Rather than redoing all of the above steps to create the Hide sheet, just duplicate the Show sheet and change the mark to an `X` (don't forget to keep the "0.0 (2)" shape set to the transparent image). Also, be sure to change the filter to include `hide` only.
 
 ![Settings for the 0.0 parameter](img/parameter-0.png)
+
+## Step 2: The blank sheet
+
+1. Create a new sheet named "Blank". Drag the `Toggle` dimension to the Rows pane.
+2. Duplicate the `Toggle` dimension and drag the copy to the Filters pane. Set the filter to include `show` only.
+3. This sheet will never be seen by the user, so you can leave it as-is if you'd like. You can hide the text on the sheet by hiding the title, right clicking on `Toggle` in the Rows pane and deselecting "Show Header", and going to Color in the Marks pane and setting the opacity to 0.
+
+## Step 3: The dashboard
+
+1. Create a new dashboard and drag a `Horizontal` object onto it.
+2. In the Layout tab, under Item Hierarchy, ensure the horizonal object is at the top of the hierarchy, deleting the Tiled object if necessary. The horizontal object should be floating.
+3. Set the width of the horizontal object. The width should be the desired width of the dashboard plus two times the desired width of the sidebar. For example, if the dashboard size is set to Generic Desktop (1366 x 768), and you want your sidebar to be 300 pixels wide, the width of the horizontal object should be 1966 pixels.
