@@ -1,6 +1,14 @@
 # Collapsing Menus in Tableau Dashboards
 Template and instructions for creating a collapsible sidebar menu in Tableau dashboards.
 
+Dashboard with the sidebar hidden:
+
+![Dashboard with sidebar hidden](img/final-hidden.png)
+
+Dashboard with the sidebar shown:
+
+![Dashboard with sidebar shown](img/final-shown.png)
+
 ## Introduction
 In complex data visualizations, screen real estate is often at a premium. It is typically good practice to include an explanation of the dashboard's content and how it was intended to be used, but it is difficult to incorporate such an explanation without taking too much space away from the data. From a design point of view, a neat solution to this tradeoff is to place explanatory text in a sidebar that the user can expand when needed, and collapse when ready to focus on the data. However, Tableau does not provide a convenient way of implementing such functionality, so a workaround is necessary.
 
